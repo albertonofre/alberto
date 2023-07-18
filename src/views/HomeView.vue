@@ -5,7 +5,8 @@
     <v-main class="fondo-contenido d-none d-md-block text-center white--text">
       <h2>Prueba Actualizacion</h2>
       <h2>Prueba Actualizacion</h2>   <h2>Prueba Actualizacion</h2>
-
+      <h2>Prueba Actualizacion</h2>
+      <h2>Prueba Actualizacion</h2>   <h2>Prueba Actualizacion</h2>
       <v-container class="centrar">
         <v-row>
           <v-col cols="5">

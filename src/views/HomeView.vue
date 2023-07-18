@@ -26,7 +26,7 @@
                 <v-col
                   ><v-btn
                     target="_blank"
-                    href="Anexo5.5_SyE1(Alberto)mayo2023Firmado.pdf"
+                    href="curiculumAlberto.pdf"
                     rounded="xl"
                     variant="outlined"
                     color="#54b8f6"
@@ -86,12 +86,12 @@
               <div class="mt-2">
                 <v-row>
                   <v-col
-                    ><h4 style="color: #54b8f6">1 año</h4>
+                    ><h4 style="color: #54b8f6">1 año <br> 6 meses </h4>
                     <h5 class="white--text">Experiencia</h5>
                   </v-col>
                   <v-col
                     ><h4 style="color: #54b8f6">4</h4>
-                    <h5 class="white--text">Proyectos</h5></v-col
+                    <h5 class="white--text">Proyectos <br> Profesionales </h5></v-col
                   >
                   <v-col
                     ><h4 style="color: #54b8f6">23</h4>
@@ -103,7 +103,6 @@
                     <h2 class="blue--text">EDUCACION</h2>
                     <h2>Tecnologico de Estudios Superiores Jocotitlan</h2>
                     <h3>Ingenieria en sistemas computacionales</h3>
-                    <li style="font-weight: bold">Alumno 8 Semestre</li>
                   </v-card-text>
                 </v-row>
               </div>
@@ -112,16 +111,48 @@
         </v-row>
       </v-container>
 
+      <div class="mb-10">
+        <h1>Empleos
+
+        </h1>
+
+         <v-row>
+          <v-col>
+            <v-avatar rounded="0" size="200">
+              <v-img src="meraLogo.png">
+
+              </v-img>
+            </v-avatar> <br>
+             <h2>Ingenieria Mera</h2>
+             <h3>Puesto: Desarrollador WEB Full Stack, <br>
+               Administrador de servicios en la Nube
+              . </h3>
+          </v-col>
+          <v-col>
+            <v-avatar size="200">
+              <v-img cover src="upap.jpg">
+
+              </v-img>
+            </v-avatar>
+            <br>
+            <h2>Unidad Educativa Alejo Peralta</h2>
+            <h3>Puesto: Programador Web, <br> Administrador de redes
+            </h3>
+          </v-col>
+        
+         </v-row>
+      </div>
+
       <v-container>
         <v-row wrap>
           <v-col>
             <v-card class="color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-confused</v-icon>
               <h3>Experiencia</h3>
-              <v-card-text class="white--text">
-                Tengo un año de experiencia trabajando con Vue.js, Node.js y
+              <v-card-text class="white--text font-weight-bold">
+                Tengo mas de un año de experiencia trabajando con Vue.js, Node.js y
                 dominando el desarrollo web utilizando HTML, CSS y JavaScript
-                nativo. Durante este tiempo, he tenido la oportunidad de crear
+                . Durante este tiempo, he tenido la oportunidad de crear
                 aplicaciones web interactivas y escalables, construir interfaces
                 de usuario reactivas y eficientes. También he trabajado con
                 Node.js para desarrollar servidores y APIs robustas.
@@ -132,7 +163,7 @@
             <v-card class="color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-happy</v-icon>
               <h3>Pasatiempo</h3>
-              <v-card-text class="white--text">
+              <v-card-text class="white--text font-weight-bold">
                 Ayudar a las personas de todo tipo de forma, en especial con lo
                 que se. Me gusta socialisar con las personas de esta manera
                 puedo conocerlos, y en caso de que sepan lo mismo que yo,
@@ -144,7 +175,7 @@
             <v-card class="color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-love</v-icon>
               <h3>Gustos</h3>
-              <v-card-text class="white--text">
+              <v-card-text class="white--text font-weight-bold">
                 La competitividad me impulsa a desafiarme a mí mismo y superar
                 mis propios límites. Busco constantemente mejorar mis
                 habilidades, conocimientos y rendimiento. Es un impulso interno
@@ -257,7 +288,16 @@
           </swiper>
           </v-window-item>
           <v-window-item :value="2">
-            <h2> <v-btn @click="step--" class="color-buttons"   icon="mdi-chevron-left"></v-btn>   &nbsp; &nbsp;&nbsp; E-comerce Tienda de Electronica  </h2>
+            <h2> <v-btn @click="step--" class="color-buttons"   icon="mdi-chevron-left"></v-btn>   &nbsp; &nbsp;&nbsp; E-comerce Tienda de Electronica
+            
+              &nbsp; 
+              <v-btn
+              href="http://ingenieriamera.com/merashop"
+              target="_blank"
+              rounded="lg" border color="blue" variant="text">
+                 Visitar!
+              </v-btn>
+            </h2>
 
             <swiper
             :effect="'coverflow'"

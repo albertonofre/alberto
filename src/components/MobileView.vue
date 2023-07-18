@@ -35,7 +35,6 @@
                 <h2 class="blue--text">EDUCACION</h2>
                 <h2>Tecnologico de Estudios Superiores Jocotitlan</h2>
                 <h3>Ingenieria en sistemas computacionales</h3>
-                <li style="font-weight: bold">Alumno 8 Semestre</li>
               </v-card-text>
             </v-row>
           </div>
@@ -63,14 +62,14 @@
                 <v-col
                   ><v-btn
                     target="_blank"
-                    href="Anexo5.5_SyE1(Alberto)mayo2023Firmado.pdf"
+                    href="curiculumAlberto.pdf"
                     rounded="xl"
                     variant="outlined"
                     color="#54b8f6"
                     >Descargar CV</v-btn
                   >
                 </v-col>
-                <v-col class="mr-1 text-left"
+                <v-col class="mr-16 text-left"
                   ><v-btn
 
                     href="https://api.whatsapp.com/send?phone=7222863109"
@@ -107,17 +106,47 @@
             >
           </v-row>
 
+          <div class="mb-10">
+            <h1>Empleos
+    
+            </h1>
+    
+             <v-row>
+              <v-col>
+                <v-avatar rounded="0" size="200">
+                  <v-img src="meraLogo.png">
+    
+                  </v-img>
+                </v-avatar> <br>
+                 <h2>Ingenieria Mera</h2>
+                 <h3>Puesto: Desarrollador WEB Full Stack, <br>
+                   Administrador de servicios en la Nube
+                  . </h3>
+              </v-col>
+              <v-col>
+                <v-avatar size="200">
+                  <v-img cover src="upap.jpg">
+    
+                  </v-img>
+                </v-avatar>
+                <br>
+                <h2>Unidad Educativa Alejo Peralta</h2>
+                <h3>Puesto: Programador Web, <br> Administrador de redes
+                </h3>
+              </v-col>
+            
+             </v-row>
+          </div>
      
-     
-          <div class="d-flex align-center flex-column">
+          <div class="d-flex align-center flex-column ">
      
             <v-card class="mt-5 color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-confused</v-icon>
               <h3>Experiencia</h3>
-              <v-card-text class="white--text">
-                Tengo un año de experiencia trabajando con Vue.js, Node.js y
+              <v-card-text class="white--text font-weight-bold">
+                Tengo mas de un año de experiencia trabajando con Vue.js, Node.js y
                 dominando el desarrollo web utilizando HTML, CSS y JavaScript
-                nativo. Durante este tiempo, he tenido la oportunidad de crear
+                . Durante este tiempo, he tenido la oportunidad de crear
                 aplicaciones web interactivas y escalables, construir interfaces
                 de usuario reactivas y eficientes. También he trabajado con
                 Node.js para desarrollar servidores y APIs robustas.
@@ -127,7 +156,7 @@
             <v-card class="mt-5 color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-happy</v-icon>
               <h3>Pasatiempo</h3>
-              <v-card-text class="white--text">
+              <v-card-text class="white--text font-weight-bold">
                 Ayudar a las personas de todo tipo de forma, en especial con lo
                 que se. Me gusta socialisar con las personas de esta manera
                 puedo conocerlos, y en caso de que sepan lo mismo que yo,
@@ -138,7 +167,7 @@
             <v-card class="mt-5 color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-love</v-icon>
               <h3>Gustos</h3>
-              <v-card-text class="white--text">
+              <v-card-text class="white--text font-weight-bold">
                 La competitividad me impulsa a desafiarme a mí mismo y superar
                 mis propios límites. Busco constantemente mejorar mis
                 habilidades, conocimientos y rendimiento. Es un impulso interno
@@ -210,9 +239,9 @@
 
       <v-container  class="proyectos">
         <h1 class="blue--text">Proyectos Profesionales</h1>
-        <v-window v-model="step">
+        <v-window v-model="step" disabled>
 
-          <v-window-item :value="1">
+          <v-window-item :value="1" >
         <h2>Punto de venta, Ubicacion de productos &nbsp; &nbsp;&nbsp; <v-btn @click="step++" class="color-buttons"   icon="mdi-chevron-right"></v-btn>  </h2>
 
             <swiper
@@ -232,13 +261,13 @@
             class="mySwiper"
           >
             <swiper-slide
-            v-for="index in 9" :key="index"
+            v-for="index in 5" :key="index"
             >
               <v-img  
               style="border-radius:30px"
-              height="600"
+              height="700"
               cover
-              :src="require(`@/assets/img1/${index}.png`)" />
+              :src="require(`@/assets/img1/mobileversion/${index}.png`)" />
                 
                 
                 </swiper-slide>
@@ -246,7 +275,15 @@
           </swiper>
           </v-window-item>
           <v-window-item :value="2">
-            <h2> <v-btn @click="step--" class="color-buttons"   icon="mdi-chevron-left"></v-btn>   &nbsp; &nbsp;&nbsp; E-comerce Tienda de Electronica  </h2>
+            <h2> <v-btn @click="step--" class="color-buttons"   icon="mdi-chevron-left"></v-btn>   &nbsp; &nbsp;&nbsp; E-comerce Tienda de Electronica
+              &nbsp; 
+            <v-btn
+            href="http://ingenieriamera.com/merashop"
+            target="_blank"
+            rounded="lg" border color="blue" variant="text">
+               Visitar!
+            </v-btn>
+            </h2>
 
             <swiper
             :effect="'coverflow'"
@@ -265,17 +302,17 @@
             class="mySwiper"
           >
           <swiper-slide
-            v-for="index in 10" :key="index"
+            v-for="index in 7" :key="index"
             >
 
               <v-img  
               style="border-radius:30px"
             
-              height="600"
+              height="700"
 
               cover
          
-              :src="require(`@/assets/Tienda/${index}.png`)" />
+              :src="require(`@/assets/Tienda/mobileversiont/${index}.png`)" />
                 
                 
                 </swiper-slide>
@@ -342,6 +379,7 @@ export default {
   setup() {
     return {
       modules: [EffectCoverflow, Pagination],
+      
     };
   },
 };
@@ -388,7 +426,7 @@ export default {
 .swiper-slide {
   
   width: 300px;
-  height: 600px;
+  height: 700px;
  
 }
 

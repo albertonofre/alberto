@@ -1,8 +1,11 @@
 <template>
   <v-app id="inspire">
     <v-app-bar class="color-cards" app> </v-app-bar>
-
+     
     <v-main class="fondo-contenido d-none d-md-block text-center white--text">
+      <h2>Prueba Actualizacion</h2>
+
+
       <v-container class="centrar">
         <v-row>
           <v-col cols="5">

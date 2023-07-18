@@ -1,11 +1,49 @@
 <template>
-  <v-app id="inspire">
-    <v-app-bar class="color-cards" app> </v-app-bar>
+    <div class="fondo-contenido   text-center white--text">
 
-    <v-main class="fondo-contenido d-none d-md-block text-center white--text">
-      <v-container class="centrar">
-        <v-row>
-          <v-col cols="5">
+        <v-card
+          style="overflow: visible; margin-top:140px"
+          rounded="xl"
+          width="400px"
+          class="mx-auto color-cards"
+        >
+          <v-avatar
+            style="border-bottom: 10px solid #54b8f6"
+            class="mt-n14"
+            size="300"
+          >
+            <v-img cover :src="require('@/assets/img/AOG Feiz.jpg')"> </v-img>
+          </v-avatar>
+          <v-divider class="mt-2 white mx-10"></v-divider>
+          <div class="mt-2">
+            <v-row>
+              <v-col
+                ><h4 style="color: #54b8f6">1 año</h4>
+                <h5 class="white--text">Experiencia</h5>
+              </v-col>
+              <v-col
+                ><h4 style="color: #54b8f6">4</h4>
+                <h5 class="white--text">Proyectos</h5></v-col
+              >
+              <v-col
+                ><h4 style="color: #54b8f6">23</h4>
+                <h5 class="white--text">Años</h5></v-col
+              >
+            </v-row>
+            <v-row>
+              <v-card-text class="white--text">
+                <h2 class="blue--text">EDUCACION</h2>
+                <h2>Tecnologico de Estudios Superiores Jocotitlan</h2>
+                <h3>Ingenieria en sistemas computacionales</h3>
+                <li style="font-weight: bold">Alumno 8 Semestre</li>
+              </v-card-text>
+            </v-row>
+          </div>
+        </v-card>
+      
+
+      
+          <div class="mt-10">
             <h1>Hola! Mi Nombre es</h1>
             <h2>Alberto Onofre Garduño</h2>
             <p>
@@ -21,7 +59,7 @@
               width="500px"
               class="mx-auto mt-3"
             >
-              <v-row>
+              <v-row >
                 <v-col
                   ><v-btn
                     target="_blank"
@@ -32,8 +70,9 @@
                     >Descargar CV</v-btn
                   >
                 </v-col>
-                <v-col
+                <v-col class="mr-1 text-left"
                   ><v-btn
+
                     href="https://api.whatsapp.com/send?phone=7222863109"
                     target="_blank"
                     outlined
@@ -41,80 +80,38 @@
                     color="#54b8f6"
                     rounded
                   >
-                    Enviar whatsapp &nbsp;
+                     Whatsapp &nbsp;
                     <v-icon size="30">mdi-whatsapp</v-icon>
                   </v-btn></v-col
                 >
               </v-row>
-              <v-row class="text-center py-16">
-                <v-col>
-                  <v-icon color="blue">mdi-at</v-icon>
-                  <a class="white--text" href="mailto:albertssj4@gmail.com"
-                    >albertssj4@gmail.com</a
-                  ></v-col
-                >
-                <v-col>
-                  <v-icon color="blue">mdi-cellphone-message</v-icon> <br />
-                  <span class="white--text">7222863109</span></v-col
-                >
-                <v-col>
-                  <v-icon color="blue">mdi-map-marker-multiple</v-icon>
-                  <span class="white--text"
-                    >Ixtlahuaca, Estado de Mexico
-                  </span></v-col
-                >
-              </v-row>
+             
             </v-card>
-          </v-col>
-
-          <v-col cols="7">
-            <v-card
-              style="overflow: visible"
-              rounded="xl"
-              width="400px"
-              class="mx-auto color-cards"
+          </div>
+          <v-row class="text-center py-16 mx-16">
+            <v-col>
+              <v-icon color="blue">mdi-at</v-icon>
+              <a class="white--text" href="mailto:albertssj4@gmail.com"
+                >albertssj4@gmail.com</a
+              ></v-col
             >
-              <v-avatar
-                style="border-bottom: 10px solid #54b8f6"
-                class="mt-n14"
-                size="300"
-              >
-                <v-img cover :src="require('@/assets/img/AOG Feiz.jpg')"> </v-img>
-              </v-avatar>
-              <v-divider class="mt-2 white mx-10"></v-divider>
-              <div class="mt-2">
-                <v-row>
-                  <v-col
-                    ><h4 style="color: #54b8f6">1 año</h4>
-                    <h5 class="white--text">Experiencia</h5>
-                  </v-col>
-                  <v-col
-                    ><h4 style="color: #54b8f6">4</h4>
-                    <h5 class="white--text">Proyectos</h5></v-col
-                  >
-                  <v-col
-                    ><h4 style="color: #54b8f6">23</h4>
-                    <h5 class="white--text">Años</h5></v-col
-                  >
-                </v-row>
-                <v-row>
-                  <v-card-text class="white--text">
-                    <h2 class="blue--text">EDUCACION</h2>
-                    <h2>Tecnologico de Estudios Superiores Jocotitlan</h2>
-                    <h3>Ingenieria en sistemas computacionales</h3>
-                    <li style="font-weight: bold">Alumno 8 Semestre</li>
-                  </v-card-text>
-                </v-row>
-              </div>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
+            <v-col>
+              <v-icon color="blue">mdi-cellphone-message</v-icon> <br />
+              <span class="white--text">7222863109</span></v-col
+            >
+            <v-col>
+              <v-icon color="blue">mdi-map-marker-multiple</v-icon>
+              <span class="white--text"
+                >Ixtlahuaca, Estado de Mexico
+              </span></v-col
+            >
+          </v-row>
 
-      <v-container>
-        <v-row wrap>
-          <v-col>
-            <v-card class="color-cards white--text" rounded="xl" width="300px">
+     
+     
+          <div class="d-flex align-center flex-column">
+     
+            <v-card class="mt-5 color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-confused</v-icon>
               <h3>Experiencia</h3>
               <v-card-text class="white--text">
@@ -126,9 +123,8 @@
                 Node.js para desarrollar servidores y APIs robustas.
               </v-card-text>
             </v-card>
-          </v-col>
-          <v-col>
-            <v-card class="color-cards white--text" rounded="xl" width="300px">
+         
+            <v-card class="mt-5 color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-happy</v-icon>
               <h3>Pasatiempo</h3>
               <v-card-text class="white--text">
@@ -138,9 +134,8 @@
                 podamos trabajar en conjunto.
               </v-card-text>
             </v-card>
-          </v-col>
-          <v-col>
-            <v-card class="color-cards white--text" rounded="xl" width="300px">
+         
+            <v-card class="mt-5 color-cards white--text" rounded="xl" width="300px">
               <v-icon class="mt-3">mdi-robot-love</v-icon>
               <h3>Gustos</h3>
               <v-card-text class="white--text">
@@ -152,9 +147,8 @@
                 aprender y establecer metas que me impulsen a seguir adelante.
               </v-card-text>
             </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
+         
+     </div>
 
       <v-container class="centarHabilidades">
         <v-row class="text-center mt-5">
@@ -240,14 +234,10 @@
             <swiper-slide
             v-for="index in 9" :key="index"
             >
-
               <v-img  
               style="border-radius:30px"
-            
-              height="400"
-
+              height="600"
               cover
-         
               :src="require(`@/assets/img1/${index}.png`)" />
                 
                 
@@ -281,7 +271,7 @@
               <v-img  
               style="border-radius:30px"
             
-              height="400"
+              height="600"
 
               cover
          
@@ -295,45 +285,9 @@
 
       
       </v-container>
-    </v-main>
-
-
-  
-    <mobile-view class="d-sm-block d-md-none"></mobile-view>
-
-    <v-footer class="flex-grow-1 color-cards">
-      <v-card
-        elevation="0"
-        tile
-        color="transparent"
-        class="black white--text py-12 px-5 text-center"
-        width="100%"
-      >
-        <v-row class="text-center">
-          <v-col>
-            <v-card-text class="white--text">
-              <h3>Redes Sociales</h3>
-            </v-card-text>
-            <v-card-text class="pt-2">
-              <v-btn
-                v-for="(item, index) in icons"
-                :key="index"
-                class="mx-1"
-                :href="item.link"
-                border
-                size="x-large"
-                variant="text"
-                :color="item.color"
-                :icon="item.icon"
-              >
-              </v-btn>
-            </v-card-text>
-          </v-col>
-        </v-row>
-      </v-card>
-    </v-footer>
-  </v-app>
+    </div>
 </template>
+
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -343,13 +297,12 @@ import "swiper/css";
 
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import mobileView from "../components/MobileView.vue"
+
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export default {
   components: {
-    mobileView,
     Swiper,
     SwiperSlide,
   },
@@ -434,8 +387,8 @@ export default {
 
 .swiper-slide {
   
-  width: 700px;
-  height: 400px;
+  width: 300px;
+  height: 600px;
  
 }
 

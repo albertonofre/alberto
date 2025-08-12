@@ -123,6 +123,15 @@
                    Administrador de servicios en la Nube
                   . </h3>
               </v-col>
+                <v-col>
+                <v-avatar rounded="0" size="200">
+                  <v-img src="meraLogo.png">
+    
+                  </v-img>
+                </v-avatar> <br>
+                 <h2>Digyto Solutions</h2>
+                 <h3>Puesto: Desarrollador WEB Full Stack. </h3>
+              </v-col>
               <v-col>
                 <v-avatar size="200">
                   <v-img cover src="upap.jpg">

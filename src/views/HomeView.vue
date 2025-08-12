@@ -324,6 +324,7 @@
             <v-card-text class="pt-2">
               <v-btn v-for="(item, index) in icons" :key="index" class="mx-1" :href="item.link" target="_blank" border size="x-large"
                 variant="text" :color="item.color" :icon="item.icon">
+                
               </v-btn>
             </v-card-text>
           </v-col>
